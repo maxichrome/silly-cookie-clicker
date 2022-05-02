@@ -153,6 +153,14 @@ function loadGameState() {
 	setCookieStyle(storedCookieStyle || "snickerdoodle");
 }
 
+// prevent press-and-hold keydown (e.g. enter key)
+cookieButton.onkeydown = function (e) {
+	if (e.repeat) {
+		e.preventDefault();
+		return false;
+	}
+};
+
 loadGameState();
 console.table(clickProducers);
 
