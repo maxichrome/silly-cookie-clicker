@@ -34,23 +34,14 @@ function clickCookie() {
 	updateScore();
 }
 
-// function doGameTick() {
-// }
-
-// let gameTickInterval = setInterval(doGameTick, GAME_TICK_INTERVAL);
-
 function freeze() {
 	isPlaying = false;
-
-	// clearInterval(gameTickInterval);
 
 	cookieButton.disabled = true;
 }
 
 function unfreeze() {
 	isPlaying = true;
-
-	// gameTickInterval = setInterval(doGameTick, GAME_TICK_INTERVAL);
 
 	cookieButton.disabled = false;
 }
