@@ -38,7 +38,7 @@ function updateScore(amount = 1, multiplier = 1, set = false) {
 	if (set) score = adjustmentAmount;
 	else score += adjustmentAmount;
 
-	document.getElementById("score").innerHTML = score;
+	document.getElementById("score").innerHTML = score.toLocaleString();
 }
 
 function setCookieStyle(styleName = "snickerdoodle") {
