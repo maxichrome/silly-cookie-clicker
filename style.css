@@ -6,9 +6,41 @@
 body {
 	margin: 0;
 	font-family: sans-serif;
+
+	display: flex;
+	flex-flow: column nowrap;
+
+	/* justify-content: center; */
+	/* align-items: center; */
+
+	min-height: 100vh;
+	min-height: -moz-available;
+	min-height: -webkit-fill-available;
+	min-height: fill-available;
 }
 
 .header {
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.cookieSection {
+	/* min-height: 768px; */
+	background: #024;
+	color: white;
+
+	font-family: "Comic Sans MS", cursive;
+
+	padding: 2rem 1.5rem;
+	padding-top: 3rem;
+
+	display: flex;
+	flex-flow: column nowrap;
+
+	justify-content: center;
+	align-items: center;
 }
 
 .cookieButton {
