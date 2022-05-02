@@ -1,0 +1,65 @@
+:root {
+	background: black;
+	color: #efefef;
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.header {
+}
+
+.cookieButton {
+	display: inline-flex;
+
+	background: none;
+	color: white;
+	padding: 14px 20px;
+	/* margin: 8px; */
+	border: none;
+	cursor: pointer;
+	animation: cookieRotate 20s linear infinite;
+
+	border-radius: 50%;
+}
+
+.cookieButton img {
+	border-radius: 50%;
+	pointer-events: none;
+
+	transform: scale(1.05);
+	transition: transform 0.15s ease-in;
+}
+
+.cookieButton:is(:hover, :focus) img {
+	transform: scale(1);
+}
+
+.cookieButton:active img {
+	transform: scale(0.85);
+}
+
+@keyframes cookieRotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.cookieStyles {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.cookieStyles button {
+	background: rgba(255, 255, 255, 0.7);
+	border: none;
+	border-radius: 6px;
+	padding: 0.5rem 0.75rem;
+}

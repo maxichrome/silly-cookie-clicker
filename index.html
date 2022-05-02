@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Silly Cookie Clicker</title>
+		<meta name="description" content="It's a funny cookie clicker game" />
+
+		<link rel="stylesheet" href="/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<h1>Silly Clicker</h1>
+		</header>
+
+		<main id="game" class="game">
+			<button id="cookie" class="cookieButton" onclick="clickCookie()">
+				<img
+					id="cookieImage"
+					src="/img/cookie_snickerdoodle.png"
+					width="250"
+					height="250"
+					alt="Cookie"
+				/>
+			</button>
+
+			<p class="score">
+				You have
+				<strong id="score"> 0 </strong>
+				cookies!
+			</p>
+
+			<section>
+				<h2>Cookie styles</h2>
+				<p>Click a cookie style to change to it</p>
+
+				<hr />
+
+				<ul class="cookieStyles" id="cookieStyleList"></ul>
+			</section>
+		</main>
+
+		<script src="/game.js"></script>
+	</body>
+</html>
